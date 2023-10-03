@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-eqiv="Conten-Type" content="text/html;charser=UTF-8">		
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript">
+    $(document).ready(inicio)
+    function inicio(){
+      $("select").change(cambiacss)
+    }
+    function cambiacss(){
+      var plantilla =$("select").attr("value");
+      $("plantilla").html('<link rel=Stylesheet href="css/base.css" type="text/css">')
+    }
+  </script>
+  <link rel=Stylesheet href="css/'+plantilla+'.css" type="text/css">
+  <plantilla>
+  </plantilla> 	
+</head>
+
+<body>
+  <select name="plantilla">
+    <option value="">Selecciona una plantilla</option>
+    <option value="pc1">Plantilla para Pc</option>
+    <option value="pchd">Plantilla alta definición</option>
+    <option value="movil">Plantilla para telefono movil</option>
+    <option value="tablet">Plantilla para tableta digital</option>
+  </select>
+  <hr>
+  <div id="contenedor">
+   <header>
+     <div id="logo">
+     </div>
+     <h1>Cintia Zamudio</h1>
+     <h2>Eslogan de la web</h2>
+   </div>
+   <nav>
+     <ul>
+      <li>
+        <a href="index.html">Inicio</a>
+      </li>
+      <li>
+        <a href="blog.html">Blog</a>
+      </li>
+      <li>
+        <a href="productos.html">Productos</a>
+      </li>
+      <li>
+       <a href="contacto.html">Contacto</a>
+     </li>	
+   </ul>
+ </nav>							
+</header>
+<section>
+ <div id="banner">
+   <h3>Titulo del banner</h3>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo vel augue interdum tincidunt. Fusce vel purus nec purus iaculis convallis.</p>
+ </div>
+ <article>
+   <div class="imagendestacado" id="img1"></div>
+   <h3>Titulo del destacado</h3>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo vel augue interdum tincidunt. Fusce vel purus nec purus iaculis convallis. </p>	
+ </article>		
+ <article>
+   <div class="imagendestacado" id="img1"></div>
+   <h3>Titulo del destacado</h3>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo vel augue interdum tincidunt. Fusce vel purus nec purus iaculis convallis. </p>	
+ </article>
+ <article>
+   <div class="imagendestacado" id="img1"></div>
+   <h3>Titulo del destacado</h3>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo vel augue interdum tincidunt. Fusce vel purus nec purus iaculis convallis. </p>	
+ </article>
+
+ <section>
+   <footer>
+     <h6>(c) 2023 Cintia Zamudio</h6>
+   </footer>
+ </div>		 
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+				<meta http-equiv="Conten-Type" content="text/html;charser=UTF-8">		
+				<script type="text/javascript" src="js/jquery.js"></script>
+				<script type="text/javascript">
+					 $(document).ready(inicio)
+					 function inicio(){
+					 		$("select").change(cambiacss)
+					 }
+					 function cambiacss(){
+					 		var plantilla =$("select").attr("value");
+					 		$("plantilla").html('<link rel=Stylesheet href="css/base.css" type="text/css">')
+					 }
+				</script>
+				<link rel=Stylesheet href="css/'+plantilla+'.css" type="text/css">
+				<plantilla>
+					<link rel=Stylesheet href="css/tablet.css" type="text/css">
+				</plantilla> 	
+		</head>
+
+		<body>
+			 <select name="plantilla">
+			 		<option value="">Selecciona una plantilla</option>
+			 		<option value="pc1">Plantilla para Pc</option>
+			 		<option value="pchd">Plantilla alta definición</option>
+			 		<option value="movil">Plantilla para telefono movil</option>
+			 		<option value="tablet">Plantilla para tableta digital</option>
+			 </select>
+			 <hr>
+			 <div id="contenedor">
+					<header>
+							<div id="logo">
+								 </div>
+								 <h1>Cintia Zamudio</h1>
+								 <h2>Eslogan de la web</h2>
+							</div>
+							<nav>
+								 <ul>
+										<li>
+												<a href="index.html">Inicio</a>
+										</li>
+										<li>
+											 <a href="blog.html">Blog</a>
+										</li>
+										<li>
+											 <a href="productos.html">Productos</a>
+										</li>
+										<li>
+											<a href="contacto.html">Contacto</a>
+										</li>	
+								 </ul>
+							</nav>
+							<div style="clear:both;"></div>							
+					</header>
+					<section>
+							<div id="contieneformulario">
+							<h3>Formulario de contacto</h3>
+							<p>Si desea en ponerse en contacto conmigo, rellene este formulario:</p>	
+								<form method="POST" action="procesaformulario.php">
+									 <div class="formyeenda">Nombre:</div>
+									 <input type="text" name="nombre">
+									 <div class="formyeenda">Correo electrónico</div>
+									 <input type="text" name="email">
+									 <div class="formyeenda">Mensaje</div>
+									 <textarea name="mensaje"></textarea>
+									 <input type="submit" value="Enviar" id="botonenviar">
+								</form>	
+							</div>
+							</section>
+							<div style="clear:both"></div>
+							<footer>
+								 <h6>(c) 2023 Cintia Zamudio</h6>
+							</footer>
+					</div>		 
+	  </body>
+</html>
