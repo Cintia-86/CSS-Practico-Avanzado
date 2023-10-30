@@ -6,28 +6,47 @@
 	<script type="text/javascript">
 		$(document).ready(inicio)
 		function inicio(){
-			$("select").change(cambiacss)
+			$("select").change(cambiacss);
+			/*if(window..innerWidth < 400 && (navigator.userAgent.match(/iphone/i) || navigator.userAgent.match(/Android/i))){
+				$("plantilla").html('<link rel=Stylesheet href="css/ movil.css" type="text/css">');
+			}
+				if((window..innerWidth >= 400 && window.innerWidth < 600) && (navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/Android/i))){
+				$("plantilla").html('<link rel=Stylesheet href="css/ tablet.css" type="text/css">');
+			}
+			if(window.innerWidth >= 600 && window.innerWidth < 1200){
+				$("plantilla").html('<link rel=Stylesheet href="css/pc1.css" type="text/css">');
+			}	
+			if(window.innerWidth >= 1200 && window.innerWidth < 2400){
+				$("plantilla").html('<link rel=Stylesheet href="css/pchd.css" type="text/css">');
+			}*/
 		}
 		function cambiacss(){
-			var plantilla =$("#plantilla").val();
+			var plantilla =$("select").attr("value");
 			$("plantilla").html('<link rel=Stylesheet href="css/'+plantilla+'.css" type="text/css">');
 		}
 	</script>
 	<link rel=Stylesheet href="css/base.css" type="text/css">
+
 	<plantilla>
-		<link rel=Stylesheet href="css/tablet.css" type="text/css">
+		<link rel=Stylesheet href="css/movil.css" type="text/css" media="hanheld and (max-width:400px) and (min-width:1px)">
+		<link rel=Stylesheet href="css/tablet.css" type="text/css" media="screen and (max-width:680px) and (min-width 401px)">
+		<link rel=Stylesheet href="css/pc1.css" type="text/css" media="screen and (max-width:1200px) and (min-width:681px)">
+		<link rel=Stylesheet href="css/pchd.css" type="text/css" media="screen and (max-width:3600px) and (min-width:1201px)">
+
+
 	</plantilla> 	
 </head>
 
 <body>
-	<select id="plantilla">
-		<!-- <option value="">Selecciona una plantilla</option> -->
-		<option selected value="tablet">Plantilla para tableta digital</option>
-		<option value="pc1">Plantilla para Pc</option>
-		<option value="pchd">Plantilla alta definición</option>
-		<option value="movil">Plantilla para telefono movil</option>
+	<select name="plantilla">
+	    <option value="">Selecciona una plantilla</option> 
+			<option value="pc1">Plantilla para Pc</option>
+			<option value="pchd">Plantilla alta definición</option>
+			<option value="movil">Plantilla para telefono movil</option>
+			<option value="tablet">Plantilla para tableta digital</option>
 	</select>
 	<hr>
+	
 	<li>
 		<a href="index.html">Inicio</a>
 	</li>

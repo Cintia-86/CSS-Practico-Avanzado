@@ -3,19 +3,21 @@
 		<head>
 				<meta http-equiv="Conten-Type" content="text/html;charser=UTF-8">		
 				<script type="text/javascript" src="js/jquery.js"></script>
+
 				<script type="text/javascript">
 					 $(document).ready(inicio)
 					 function inicio(){
 					 		$("select").change(cambiacss)
 					 }
 					 function cambiacss(){
-					 		var plantilla =$("select").attr("value");
-					 		$("plantilla").html('<link rel=Stylesheet href="css/base.css" type="text/css">')
+					 		var plantilla =$("select").val();
+					 		$("plantilla").html('<link rel=stylesheet href="css/'+plantilla+'.css" type="text/css">')
 					 }
 				</script>
-				<link rel=Stylesheet href="css/'+plantilla+'.css" type="text/css">
+
+
 				<plantilla>
-					<link rel=Stylesheet href="css/tablet.css" type="text/css">
+					<link rel=stylesheet href="css/tablet.css" type="text/css">
 				</plantilla> 	
 		</head>
 
@@ -35,6 +37,7 @@
 								 <h1>Cintia Zamudio</h1>
 								 <h2>Eslogan de la web</h2>
 							</div>
+							<div style="clear:both;"></div>
 							<nav>
 								 <ul>
 										<li>
@@ -50,11 +53,61 @@
 											<a href="contacto.html">Contacto</a>
 										</li>	
 								 </ul>
-							</nav>							
+							</nav>	
+							<div style="clear:both;"></div>						
 							</header>
 							<section>
-								 Soy los productos
-
+								 <div id="contieneportafolio">
+								 <article class="artportafolio" id="portal">
+								 			<div class="contieneportafoliointerior">
+								 				<h3>Titulo del proyecto</h3>
+								 				<p>Breve descricion</p>	
+								 				<div class="imagenportafolio" id="portafolio1"></div>
+								 </article>
+								 <article class="artportafolio" id="porta1">
+								 <div class="contieneportafoliointerior">	
+								 				<h3>Titulo del proyecto</h3>
+								 				<p>Breve descricion</p>	
+								 				<div id="imagenportafolio" id="portafolio2"></div>
+								 </article>		
+								  <article class="artportafolio" id="porta1">
+								  <div class="contieneportafoliointerior">	
+								 				<h3>Titulo del proyecto</h3>
+								 				<p>Breve descricion</p>	
+								 				<div class="imagenportafolio" id="portafolio3"></div>
+								 </article>
+								  <article class="artportafolio" id="porta1">
+								  <div class="contieneportafoliointerior" >	
+								 				<h3>Titulo del proyecto</h3>
+								 				<p>Breve descricion</p>	
+								 				<div id="imagenportafolio" id="portafolio4"></div>
+								 </article>
+								  <article class="artportafolio" id="porta1">
+								  <div class="contieneportafoliointerior" >	
+								 				<h3>Titulo del proyecto</h3>
+								 				<p>Breve descricion</p>	
+								 				<div id="imagenportafolio" id="portafolio5"></div>
+								 </article>
+								  <article class="artportafolio" id="porta1">
+								  <div class="contieneportafoliointerior" >	
+								 				<h3>Titulo del proyecto</h3>
+								 				<p>Breve descricion</p>	
+								 				<div id="imagenportafolio" id="portafolio6"></div>
+								 </article>
+								 <article class="artportafolio" id="porta1">
+								  <div class="contieneportafoliointerior" >	
+								 				<h3>Titulo del proyecto</h3>
+								 				<p>Breve descricion</p>	
+								 				<div id="imagenportafolio" id="portafolio7"></div>
+								 </article>
+								  <article class="artportafolio" id="porta1">
+								  <div class="contieneportafoliointerior" >	
+								 				<h3>Titulo del proyecto</h3>
+								 				<p>Breve descricion</p>	
+								 				<div id="imagenportafolio" id="portafolio8"></div>
+								 </article>
+								 <div style="clear:both;"></div>
+								</div>
 							</section>
 							<footer>
 								 <h6>(c) 2023 Cintia Zamudio</h6>
